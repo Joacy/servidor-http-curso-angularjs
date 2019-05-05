@@ -24,6 +24,26 @@ var contatos = [
         }
     },
     {
+        nome: "João",
+        telefone: "91299998",
+        data: new Date(),
+        operadora: {
+            nome: "Tim",
+            codigo: "41",
+            categoria: "Celular"
+        }
+    },
+    {
+        nome: "José",
+        telefone: "97771998",
+        data: new Date(),
+        operadora: {
+            nome: "Oi",
+            codigo: "14",
+            categoria: "Celular"
+        }
+    },
+    {
         nome: "Maria",
         telefone: "999999997",
         data: new Date(),
@@ -39,27 +59,32 @@ var operadoras = [
     {
         nome: "Oi",
         codigo: "14",
-        categoria: "Celular"
+        categoria: "Celular",
+        preco: 2
     },
     {
         nome: "Vivo",
         codigo: "15",
-        categoria: "Celular"
+        categoria: "Celular",
+        preco: 3
     },
     {
         nome: "Tim",
         codigo: "41",
-        categoria: "Celular"
+        categoria: "Celular",
+        preco: 1
     },
     {
         nome: "GVT",
         codigo: "25",
-        categoria: "Fixo"
+        categoria: "Fixo",
+        preco: 2
     },
     {
         nome: "Embratel",
         codigo: "21",
-        categoria: "Fixo"
+        categoria: "Fixo",
+        preco: 1
     }
 ];
 
