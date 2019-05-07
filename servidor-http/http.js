@@ -99,5 +99,6 @@ app.get('/operadoras', function (req, res) {
 });
 
 app.post('/contatos', function (req, res) {
+    contatos.push(req.body);
     res.end();
 });
