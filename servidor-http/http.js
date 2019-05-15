@@ -88,6 +88,12 @@ var operadoras = [
     }
 ];
 
+app.get('/', function(req, res){
+    res.write(JSON.stringify(contatos));
+    res.write(JSON.stringify(operadoras));
+    res.end();
+});
+
 app.get('/contatos', function (req, res) {
     res.write(JSON.stringify(contatos));
     res.end();
@@ -99,6 +105,16 @@ app.get('/operadoras', function (req, res) {
 });
 
 app.post('/contatos', function (req, res) {
-    contatos.push(req.body);
+    console.log(req.body);
+    contatos.push({
+        nome: "Joacy Mesquita",
+        telefone: "(75) 99118-3579",
+        data: new Date(),
+        operadora: {
+            nome: "Tim",
+            codigo: "41",
+            categoria: "Celular"
+        }
+    });
     res.end();
 });
